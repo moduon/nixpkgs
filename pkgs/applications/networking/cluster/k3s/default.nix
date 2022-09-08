@@ -12,6 +12,7 @@
 , rsync
 , kmod
 , libseccomp
+, openiscsi
 , pkg-config
 , ethtool
 , util-linux
@@ -253,6 +254,7 @@ buildGoModule rec {
     iproute2
     bridge-utils
     ethtool
+    openiscsi
     util-linux # kubelet wants 'nsenter' from util-linux: https://github.com/kubernetes/kubernetes/issues/26093#issuecomment-705994388
     conntrack-tools
   ];
